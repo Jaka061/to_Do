@@ -4,7 +4,7 @@ def homepage(request):
     return HttpResponse("Hello")
 
 def test(request):
-    return render(request,"index.html")
+    return render(request,"todo.html")
 
 def second(request):
     return HttpResponse("Test2")
