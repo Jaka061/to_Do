@@ -5,3 +5,6 @@ def homepage(request):
 
 def test(request):
     return render(request,"index.html")
+
+def second(request):
+    return HttpResponse("Test2")
