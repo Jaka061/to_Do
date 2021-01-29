@@ -15,7 +15,7 @@ section{
  width: 80%;
 }
 .createInput{
-    padding: 10px 5px;
+    padding: 12px 5px;
     font-size: 20px;
     width: 80%;
 }
@@ -61,8 +61,8 @@ section{
     opacity: 0.5;
 }
 .marked{
-    background-color: rgb(235, 243, 158);
-    color: rgb(238, 235, 46);
+    background-color: #FFE082;
+    border: 2px solid #fad66a
 }
 .header1{
     display: flex;

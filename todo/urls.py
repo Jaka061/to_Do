@@ -22,8 +22,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',third,name ="test3"),
-    path('todo/',todo,name="test"),
+    path('',todo,name="todo"),
+    path('test3/',third,name ="test3"),
     path('test2/',second)
 ]   + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT) \
     + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
