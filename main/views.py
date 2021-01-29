@@ -1,10 +1,10 @@
 from django.shortcuts import render,HttpResponse
 
-def homepage(request):
-    return HttpResponse("Hello")
-
-def test(request):
+def todo(request):
     return render(request,"todo.html")
 
 def second(request):
-    return HttpResponse("Test2")
+    return HttpResponse(" Second pade Test2")
+
+def third(request):
+    return HttpResponse("This is page test3")
