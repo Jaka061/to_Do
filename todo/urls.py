@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import todo,second,third
+from main.views import todo,test,test2,test3
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -23,8 +23,10 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',todo,name="todo"),
-    path('test3/',third,name ="test3"),
-    path('test2/',second)
+    path('test/',test,name ="test3"),
+    path('test2/',test2),
+    path('test3/',test3)
+
 ]   + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT) \
     + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
