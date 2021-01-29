@@ -52,12 +52,12 @@ section{
 .done{
     background-color: rgb(193, 223, 215);
     text-decoration: line-through;
-    color: rgb(49, 155, 150);
+    color: rgb(209, 231, 230);
 }
-.toDo.done h4 , .toDo.done p, .toDo.done span{
-    color: gray;  
+.done h4 , .toDo.done p, .toDo.done span{
+    color: rgb(49, 49, 49);  
 }
-.toDo.done img{
+.done img{
     opacity: 0.5;
 }
 .marked{
@@ -72,6 +72,9 @@ section{
 .header1 h4{
     font-size: 18px;
     /* font-family: sans-serif; */
+}
+.header1 h4 a{
+    text-decoration: none;
 }
 .footer1{
     display: flex;
