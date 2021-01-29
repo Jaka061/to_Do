@@ -15,17 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import todo,test,test2,test3
+from main.views import  todo1,add_todo
 from django.conf import settings
 from django.conf.urls.static import static
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',todo,name="todo"),
-    path('test/',test,name ="test"),
-    path('test2/',test2),
-    path('test3/',test3)
+    path('',todo1,name="todo"),
+    # path('book/',book,name ="book"),
+    # path('test/',test),
+    path('add_todo/',add_todo ,name = "add-todo"),
 
 ]   + static(settings.STATIC_URL,document_root=settings.STATIC_ROOT) \
     + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

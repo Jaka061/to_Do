@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+</head>
+<body>
+    <h4>Ваша стрница успешно изменена </h4>
+    {% for book in book_list %}
+        <h3>{{ book.title }} - {{book.date }} </h3>
+        </h3>   {{ book.price }}</h3>
+    {% endfor %}
+</body>
+</html>
