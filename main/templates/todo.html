@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
     <link rel="stylesheet" href="{% static 'styles/style.css' %}">
-    <link rel="stylesheet" href="{% static 'styles/checkbox.css'%}">'
+    <link rel="stylesheet" href="{% static 'styles/checkbox.css' %}">
 </head>
 <body>
+    
     <section>
         <div class="createContainer">
             <input class="createInput" type="text" placeholder="Напишите новую задачу ">
@@ -16,24 +17,26 @@
         </div>
 
     <div class="toDoContainer">
+        {% for todo in todo_list %}
         <div class="toDo item">
             <div class="header1">
                 <label class="checkboxCont">
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <h4>Купить сумку</h4>
+                <h4>{{todo.text }}</h4>
             </div>
             <div class="footer1">
-                <p>17.01.2021 <span>17:12</span></p>
+                <p>{{todo.created_at }}<span>17:12</span></p>
                 <div class="buttoms">
                     <img src="../static/img/star.icon.png" >
                     <img src="../static/img/64022.png" >
                 </div>
             </div>
         </div>
+        {% endfor %}
 
-        <div class="toDo marked">
+        <!-- <div class="toDo marked">
             <div class="header1">
                 <label class="checkboxCont">
                     <input type="checkbox">
@@ -116,10 +119,10 @@
                     <img src="../static/img/64022.png" >
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
-    </section>
 
+    </section>
     <script src="./script.js"></script>
 </body>
 </html>

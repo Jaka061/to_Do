@@ -1,13 +1,13 @@
 .checkboxCont{
     display: block;
     position: relative;
-    padding: 35px;
     margin-bottom: 12px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; 
+    padding-left: 30px;
 }
 .checkboxCont input{
     position: absolute;
@@ -22,7 +22,7 @@
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: rgb(235, 243, 158); 
+    background-color: rgb(227, 230, 201); 
 }
 .checkboxCont input:checked ~ .checkmark {
     background-color: #2196F3;
